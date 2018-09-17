@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+	layout:decorate="layout">
+<head>
+<title>Analisys</title>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<!-- Content Header (Page header) -->
+			<section layout:fragment="header">
+				<h1>
+					Design <small>FrameWebLD to RDF</small>
+				</h1>
+				<ol class="breadcrumb">
+					<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+					<li class="active">Design</li>
+				</ol>
+			</section>
+
+			<!-- Main content -->
+			<section layout:fragment="content">
+				<div class="row">
+					<!-- left column -->
+					<div class="col-md-12">
+						<!-- general form elements -->
+						<div class="box box-primary">
+							<div class="box-header with-border">
+								<h3 class="box-title">Relational Database Mapping to Triple
+									Store</h3>
+							</div>
+							<!-- /.box-header -->
+							<!-- form start -->
+							<form role="form">
+								<div class="box-body">
+									<div class="form-group">
+										<label for="exampleInputFile">FrameWebLD File</label> <input
+											type="file" id="exampleInputFile">
+
+									</div>
+									<div class="form-group">
+										<label for="exampleInput">Name of Vocabulary</label> <input
+											type="text" class="form-control" id="vocabulary">
+									</div>
+
+									<div class="form-group">
+										<label for="exampleInput">URL of Vocabulary</label> <input
+											type="text" class="form-control" id="urlvocabulary">
+									</div>
+									<div class="form-group">
+										<label for="exampleInput">Drive of Database</label> <input
+											type="text" class="form-control" id="drive">
+									</div>
+									<div class="form-group">
+										<label for="exampleInput">Link of Database</label> <input
+											type="text" class="form-control" id="linkdrive">
+									</div>
+									<div class="form-group">
+										<label for="exampleInput">User of Database</label> <input
+											type="text" class="form-control" id="user">
+									</div>
+									<div class="form-group">
+										<label for="exampleInput">Password of Database</label> <input
+											type="text" class="form-control" id="pass">
+									</div>
+								</div>
+								<!-- /.box-body -->
+
+								<div class="box-footer">
+									<button type="submit" class="btn btn-primary">Generate Mapping</button>
+								</div>
+							</form>
+						</div>
+
+						<!-- /.box -->
+
+					</div>
+					<!--/.col (right) -->
+				</div>
+				<!-- /.row -->
+			</section>
+			<!-- /.content -->
+		</div>
+
+	</div>
+	<!-- ./wrapper -->
+
+
+</body>
+</html>
